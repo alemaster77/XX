@@ -2,12 +2,12 @@
 <head>
 <title>MASTERHACK EXPLOIT  PS4 2021</title>
 <link rel="stylesheet" href="index.css">
-<body style="color:white;font-size:20px;text-align:center;" onload="go();" class="bg">
+<body style="color:yellow;font-size:25px;text-align:center;" onload="go();" class="bg">
 <script>
 function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="CARGANDO CACHE: " + Percent + "%"};
 function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="CACHE CARGADO EXITOSAMENTE!!!";localStorage.isPrbCached=true;},1000);setTimeout(function(){window.msgs.innerHTML="SALGA DEL NAVEGADOR, DESCONECTE INTERNET Y VUELVA A ENTRAR";},3000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
 </script>
-<h1 id=msgs style='font-size:35px;text-align:center;color:white'>MASTERHACK CARGAS</h1>
+<h1 id=msgs style='font-size:35px;text-align:center;color:white'>MASTERHACK... POR FAVOR ESPERE</h1>
 <div id=dlog></div>
 <button style=opacity:0 id="input1" onfocus="handle2()"></button>
 <button style=opacity:0 id="input2"></button>
@@ -51,15 +51,15 @@ mymenu.style.display="block";
 };
 </script>
 <div id=mymenu style="text-align:center;display:none">
-<div text-align= center>Éxitos = <span id=passCounter></span>&nbsp;&nbsp;:&nbsp;&nbsp;Fallos = <span id=failCounter></span></div>
-<div style="font-size:25px;color:white"></div>
+<div text-align= center>CARGAS EXITOSAS = <span id=passCounter></span>&nbsp;&nbsp;:&nbsp;&nbsp;CARGAS FALLIDAS = <span id=failCounter></span></div>
+<div style="font-size:30px;color:yellow"></div>
 </br>
 </br>
 </br>
 </br>
 </br>
 </br>
-<button onMouseOver="msgs.innerHTML='GoldHen - V1.1 '"; onmouseout="msgs.innerHTML='Carga Pirata 7.55 by DarkFiveYTB'" onclick="load_goldhenb(); return false"><img src="hen.png"></button>
+<button onMouseOver="msgs.innerHTML='GoldHen - V1.1 '"; onmouseout="msgs.innerHTML='CARGANDO'" onclick="load_goldhenb(); return false"><img src="hen.png"></button>
 <button onMouseOver="msgs.innerHTML='Orbis Toolbox - v1167 Alpha '"; onmouseout="msgs.innerHTML='Carga Pirata 7.55 by DarkFiveYTB'" onclick="load_orbistoolbox(); return false"><img src="OrbisToolbox.png"></button>
 <button onMouseOver="msgs.innerHTML='Bin Loader '"; onmouseout="msgs.innerHTML='Carga Pirata 7.55 by DarkFiveYTB'" onclick="load_binloader(); return false"><img src="binloader.png"></button>
 <button onMouseOver="msgs.innerHTML='PS4 Dumper '"; onmouseout="msgs.innerHTML='Carga Pirata 7.55 by DarkFiveYTB'" onclick="load_dumper(); return false"><img src="dumper.png"></button>
