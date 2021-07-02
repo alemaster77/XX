@@ -62,8 +62,6 @@ mymenu.style.display="block";
 <button onMouseOver="msgs.innerHTML='GoldHen - V1.1 '"; onmouseout="msgs.innerHTML='Carga Pirata 7.55 by DarkFiveYTB'" onclick="load_goldhenb(); return false"><img src="hen.png"></button>
 <button onMouseOver="msgs.innerHTML='Orbis Toolbox - v1167 Alpha '"; onmouseout="msgs.innerHTML='Carga Pirata 7.55 by DarkFiveYTB'" onclick="load_orbistoolbox(); return false"><img src="OrbisToolbox.png"></button>
 <button onMouseOver="msgs.innerHTML='Bin Loader '"; onmouseout="msgs.innerHTML='Carga Pirata 7.55 by DarkFiveYTB'" onclick="load_binloader(); return false"><img src="binloader.png"></button>
-<button onMouseOver="msgs.innerHTML='App2 Usb '"; onmouseout="msgs.innerHTML='Carga Pirata 7.55 by DarkFiveYTB'" onclick="load_app2usb(); return false"><img src="app2usb.png"></button>
-<button onMouseOver="msgs.innerHTML='FakeUSB v1.0 '"; onmouseout="msgs.innerHTML='Carga Pirata 7.55 by DarkFiveYTB'" onclick="load_fakeusb() ; return false"><img src="fakeusb.png"></button> 
 <button onMouseOver="msgs.innerHTML='PS4 Dumper '"; onmouseout="msgs.innerHTML='Carga Pirata 7.55 by DarkFiveYTB'" onclick="load_dumper(); return false"><img src="dumper.png"></button>
 <br>
 <br>
@@ -121,20 +119,6 @@ msgs.innerHTML="<h1 style='font-size:27px;text-align:center;'>LANZANDO BIN LOADE
 LoadedMSG="Envía Payloads al puerto 9021";
 function loadScript(){getScript("exp_loaderBL.js",function(){});}
 loadScript();
-}
-
-function load_app2usb(){
-msgs.innerHTML="<h1 style='font-size:27px;text-align:center;'>LANZANDO APP USB...</h1>";
-LoadedMSG="App-To-Usb Inyectado";
-PLfile = "pl_app2usb.bin";
-loadScript2();
-}
-
-function load_fakeusb(){
-msgs.innerHTML="<h1 style='font-size:27px;text-align:center;'>LANZANDO FAKE USB...</h1>";
-LoadedMSG="Fake Usb Inyectado";
-PLfile="pl_fakeusb.bin";
-loadScript2();
 }
 
 function load_dumper(){
