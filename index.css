@@ -1,7 +1,7 @@
 button{
           background:rgba(0,0,255);
           width:20.5%;
-          height:150px
+          height:200px
 } 
 button:hover {
 	 background-color:blue;
