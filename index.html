@@ -7,7 +7,7 @@
 function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="CARGANDO CACHE: " + Percent + "%"};
 function DisplayCacheProgress(){setTimeout(function(){window.msgs.innerHTML="CACHE CARGADO EXITOSAMENTE!!!";localStorage.isPrbCached=true;},1000);setTimeout(function(){window.msgs.innerHTML="SALGA DEL NAVEGADOR, DESCONECTE INTERNET Y VUELVA A ENTRAR";},3000);}window.applicationCache.addEventListener("progress",DLProgress,false);window.applicationCache.oncached=function(e){DisplayCacheProgress();};window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
 </script>
-<h1 id=msgs style='font-size:35px;text-align:center;color:yellow'>MASTERHACK... POR FAVOR ESPERE</h1>
+<h1 id=msgs style='font-size:45px;text-align:center;color:yellow'>MASTERHACK... POR FAVOR ESPERE</h1>
 <div id=dlog></div>
 <button style=opacity:0 id="input1" onfocus="handle2()"></button>
 <button style=opacity:0 id="input2"></button>
@@ -59,10 +59,10 @@ mymenu.style.display="block";
 </br>
 </br>
 </br>
-<button onMouseOver="msgs.innerHTML='GoldHen - V1.1 '"; onmouseout="msgs.innerHTML='CARGANDO" onclick="load_goldhenb(); return false"><img src="hen.png"></button>
-<button onMouseOver="msgs.innerHTML='Orbis Toolbox - v1167 Alpha '"; onmouseout="msgs.innerHTML='CARGANDO" onclick="load_orbistoolbox(); return false"><img src="OrbisToolbox.png"></button>
-<button onMouseOver="msgs.innerHTML='Bin Loader '"; onmouseout="msgs.innerHTML='CARGANDO" onclick="load_binloader(); return false"><img src="binloader.png"></button>
-<button onMouseOver="msgs.innerHTML='PS4 Dumper '"; onmouseout="msgs.innerHTML='CARGANDO" onclick="load_dumper(); return false"><img src="dumper.png"></button>
+<button onMouseOver="msgs.innerHTML='GOLD HEN V1.1'"; onmouseout="msgs.innerHTML='CARGANDO" onclick="load_goldhenb(); return false"><img src="hen.png"></button>
+<button onMouseOver="msgs.innerHTML='ORBIS TOOL BOX'"; onmouseout="msgs.innerHTML='CARGANDO" onclick="load_orbistoolbox(); return false"><img src="OrbisToolbox.png"></button>
+<button onMouseOver="msgs.innerHTML='BIN LOADER'"; onmouseout="msgs.innerHTML='CARGANDO" onclick="load_binloader(); return false"><img src="binloader.png"></button>
+<button onMouseOver="msgs.innerHTML='DUMPEA TUS JUEGOS'"; onmouseout="msgs.innerHTML='CARGANDO" onclick="load_dumper(); return false"><img src="dumper.png"></button>
 <br>
 <br>
 <br>
@@ -75,7 +75,7 @@ mymenu.style.display="block";
 </br>
 </br>
 </br>
-<div style="font-size:30px;color:yellow">PARA SALIR PRESIONE EL BOTON PS DE SU MANDO.</div>
+<div style="font-size:40px;color:yellow">PARA SALIR PRESIONE EL BOTON PS DE SU MANDO.</div>
 <br>
 <br>
 <br>
@@ -99,7 +99,7 @@ window.failCounter.innerHTML=localStorage.failcount;
 
 
 function load_goldhenb(){
-msgs.innerHTML="<h1 style='font-size:30px;text-align:center;'>LANZANDO GOLD HEN 1.1...</h1>";
+msgs.innerHTML="<h1 style='font-size:40px;text-align:center;'>LANZANDO GOLD HEN 1.1...</h1>";
 LoadedMSG="GoldHen V1.1 CARGADO CON EXITO";
 function getScript(source,callback){var gs=document.createElement('script');gs.src=source;gs.onload=callback;gs.async=false;document.body.appendChild(gs);}
 function loadScript(){getScript("exp_jailbreak1.js",function(){setTimeout(jailbreak,000);});}loadScript();
@@ -108,21 +108,21 @@ loadScript2();
 }
 
 function load_orbistoolbox(){
-msgs.innerHTML="<h1 style='font-size:30px;text-align:center;'>LANZANDO ORBIS TOOL BOX ...";
+msgs.innerHTML="<h1 style='font-size:40px;text-align:center;'>LANZANDO ORBIS TOOL BOX ...";
 LoadedMSG="OrbisToolBox CARGADO CON EXITO";
 PLfile = "pl_OrbisToolbox.bin";
 loadScript2();
 }
 
 function load_binloader(){
-msgs.innerHTML="<h1 style='font-size:30px;text-align:center;'>LANZANDO BIN LOADER...";
+msgs.innerHTML="<h1 style='font-size:40px;text-align:center;'>LANZANDO BIN LOADER...";
 LoadedMSG="Envía Payloads al puerto 9021";
 function loadScript(){getScript("exp_loaderBL.js",function(){});}
 loadScript();
 }
 
 function load_dumper(){
-msgs.innerHTML="<h1 style='font-size:30px;text-align:center;'>LANZANDO DUMPER...</h1>";
+msgs.innerHTML="<h1 style='font-size:40px;text-align:center;'>LANZANDO DUMPER...</h1>";
 LoadedMSG="Dumper CARGADO CON EXITO";
 PLfile = "pl_dumper.bin";
 loadScript2();
